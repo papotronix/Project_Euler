@@ -8,6 +8,8 @@
 
 # Find all Fibonacci sequence numbers up to 4000000
 # Sum even terms
+import time
+start = time.time()
 
 sum = 0 
 fib = [1, 2]
@@ -22,3 +24,6 @@ for i in fib:
     if i % 2 == 0:
         sum += i
 print(sum)
+
+end = time.time()
+print("The time of execution of above program is :", end-start)
